@@ -1,0 +1,15 @@
+{#views.post_detail传进来post, post_id#}
+
+{% extends 'blog/base.html' %}
+
+{% block title %}
+  {{ post.title }}
+{% endblock %}
+
+{% block content %}
+<h1>{{ post.title }}</h1>
+<p>{{ post.published }} by {{ post.author }}</p>
+<div>
+  {{ post.body}}
+</div>
+{% endblock %}
