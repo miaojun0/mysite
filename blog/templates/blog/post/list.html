@@ -12,4 +12,5 @@
   <h2><a href="{{ post.id }}">{{ post.title }}</a></h2>
   <p>Published {{ post.published }} by {{ post.author }}</p>
   {% endfor %}
+    {% include 'blog/post/pagination.html' %}
 {% endblock %}
